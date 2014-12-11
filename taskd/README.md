@@ -10,8 +10,8 @@ Put your configuration in /data/taskd.
 docker pull poxar/taskd
 
 docker run --name taskd \
-  -p=53589:53589
-  -v=/data/taskd:/data
+  -p=53589:53589 \
+  -v=/data/taskd:/data \
   poxar/taskd
 ```
 
@@ -37,8 +37,8 @@ Finally run the container.
 
 ```sh
 docker run --name taskd \
-  -p=53589:53589
-  -v=/data/taskd:/data
+  -p=53589:53589 \
+  -v=/data/taskd:/data \
   poxar/taskd
 ```
 
