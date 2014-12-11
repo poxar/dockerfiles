@@ -1,0 +1,6 @@
+#!/bin/bash
+# start teamspeak with all changing data in /data
+
+export LD_LIBRARY_PATH=/opt/teamspeak:${LD_LIBRARY_PATH}
+cd /data
+/opt/teamspeak/ts3server_linux_amd64 inifile=/etc/ts3server.ini
