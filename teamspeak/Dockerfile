@@ -14,10 +14,10 @@ RUN apt-get -qqy update \
  && apt-get -qqy install curl
 
 # Download and install TeamSpeak 3
-RUN curl "http://teamspeak.gameserver.gamed.de/ts3/releases/3.0.10.3/teamspeak3-server_linux-amd64-3.0.10.3.tar.gz" -o teamspeak3-server_linux-amd64-3.0.10.3.tar.gz
-RUN tar zxf teamspeak3-server_linux-amd64-3.0.10.3.tar.gz
+RUN curl "http://teamspeak.gameserver.gamed.de/ts3/releases/3.0.11.2/teamspeak3-server_linux-amd64-3.0.11.2.tar.gz" -o teamspeak3-server_linux-amd64.tar.gz
+RUN tar zxf teamspeak3-server_linux-amd64.tar.gz
 RUN mv teamspeak3-server_linux-amd64 /opt/teamspeak
-RUN rm teamspeak3-server_linux-amd64-3.0.10.3.tar.gz
+RUN rm teamspeak3-server_linux-amd64.tar.gz
 
 # Load in config files
 ADD start /start
