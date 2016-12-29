@@ -1,5 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.5
 
-RUN echo @testing http://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories
-RUN apk add --no-cache nodejs hugo@testing bash
+RUN apk add --no-cache nodejs-current hugo bash ca-certificates
 RUN npm install -g surge && npm cache clear
