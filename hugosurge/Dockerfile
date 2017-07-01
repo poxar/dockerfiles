@@ -1,4 +1,5 @@
-FROM alpine:3.5
+FROM alpine:3.6
 
-RUN apk add --no-cache nodejs-current hugo bash ca-certificates
-RUN npm install -g surge && npm cache clear
+ENV LAST_REFRESH 2017-07-01
+RUN apk add --no-cache nodejs nodejs-npm hugo bash ca-certificates
+RUN npm install -g surge
