@@ -1,6 +1,6 @@
 FROM circleci/openjdk:8-jdk
 
-RUN sudo apt-get install -y scala ca-certificates postgresql-client
+RUN sudo apt-get install -y scala ca-certificates postgresql-client maven build-essential
 
 ENV SBT_VERSION 0.13.15
 
