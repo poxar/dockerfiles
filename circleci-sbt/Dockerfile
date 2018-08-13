@@ -1,4 +1,4 @@
-FROM circleci/openjdk:8-jdk
+FROM circleci/openjdk:8-jdk-node
 
 RUN sudo apt-get install -y scala ca-certificates postgresql-client maven build-essential
 
